@@ -1,9 +1,7 @@
 # Phishing Methodology
 
-{% hint style="danger" %}
-Do you use **Hacktricks every day**? Did you find the book **very** **useful**? Would you like to **receive extra help** with cybersecurity questions? Would you like to **find more and higher quality content on Hacktricks**?\
-[**Support Hacktricks through github sponsors**](https://github.com/sponsors/carlospolop) **so we can dedicate more time to it and also get access to the Hacktricks private group where you will get the help you need and much more!**
-{% endhint %}
+*Do you use **Hacktricks every day**? Did you find the book **very** **useful**? Would you like to **receive extra help** with cybersecurity questions? Would you like to **find more and higher quality content on Hacktricks**?\
+[**Support Hacktricks through github sponsors**](https://github.com/sponsors/carlospolop) **so we can dedicate more time to it and also get access to the Hacktricks private group where you will get the help you need and much more!***
 
 If you want to know about my **latest modifications**/**additions** or you have **any suggestion for HackTricks** or **PEASS**, **join the** [**💬**](https://emojipedia.org/speech-balloon/)[**telegram group**](https://t.me/peass), or **follow** me on **Twitter** [**🐦**](https://github.com/carlospolop/hacktricks/tree/7af18b62b3bdc423e11444677a6a73d4043511e9/\[https:/emojipedia.org/bird/README.md)[**@carlospolopm**](https://twitter.com/carlospolopm)**.**\
 If you want to **share some tricks with the community** you can also submit **pull requests** to [**https://github.com/carlospolop/hacktricks**](https://github.com/carlospolop/hacktricks) that will be reflected in this book and don't forget to **give ⭐** on **github** to **motivate** **me** to continue developing this book.
@@ -290,13 +288,11 @@ You must **configure a DKIM for the new domain**. If you don't know what is a DM
 
 This tutorial is based on: [https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy)
 
-{% hint style="info" %}
-You need to concatenate both B64 values that the DKIM key generates:
+*You need to concatenate both B64 values that the DKIM key generates:
 
 ```
 v=DKIM1; h=sha256; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0wPibdqPtzYk81njjQCrChIcHzxOp8a1wjbsoNtka2X9QXCZs+iXkvw++QsWDtdYu3q0Ofnr0Yd/TmG/Y2bBGoEgeE+YTUG2aEgw8Xx42NLJq2D1pB2lRQPW4IxefROnXu5HfKSm7dyzML1gZ1U0pR5X4IZCH0wOPhIq326QjxJZm79E1nTh3xj" "Y9N/Dt3+fVnIbMupzXE216TdFuifKM6Tl6O/axNsbswMS1TH812euno8xRpsdXJzFlB9q3VbMkVWig4P538mHolGzudEBg563vv66U8D7uuzGYxYT4WS8NVm3QBMg0QKPWZaKp+bADLkOSB9J2nUpk4Aj9KB5swIDAQAB
-```
-{% endhint %}
+```*
 
 ### Test your email configuration score
 
@@ -347,10 +343,8 @@ The page www.mail-tester.com can indicate you if you your domain is being blocke
 
 ![](<../.gitbook/assets/image (253) (1) (2) (1) (1) (2) (2) (3) (3) (5) (3) (5).png>)
 
-{% hint style="info" %}
-It's recommended to use the "**Send Test Email**" functionality to test that everything is working.\
-I would recommend to **send the test emails to 10min mails addresses** in order to avoid getting blacklisted making tests.
-{% endhint %}
+*It's recommended to use the "**Send Test Email**" functionality to test that everything is working.\
+I would recommend to **send the test emails to 10min mails addresses** in order to avoid getting blacklisted making tests.*
 
 ### Email Template
 
@@ -388,9 +382,7 @@ Note that **in order to increase the credibility of the email**, it's recommende
 
 ![](<../.gitbook/assets/image (393).png>)
 
-{% hint style="info" %}
-The Email Template also allows to **attach files to send**. If you would also like to steal NTLM challenges using some specially crafted files/documents [read this page](../windows/ntlm/places-to-steal-ntlm-creds.md).
-{% endhint %}
+*The Email Template also allows to **attach files to send**. If you would also like to steal NTLM challenges using some specially crafted files/documents [read this page](../windows/ntlm/places-to-steal-ntlm-creds.md).*
 
 ### Landing Page
 
@@ -401,14 +393,10 @@ The Email Template also allows to **attach files to send**. If you would also li
 
 ![](<../.gitbook/assets/image (394).png>)
 
-{% hint style="info" %}
-Usually you will need to modify the HTML code of the page and make some tests in local (maybe using some Apache server) **until you like the results.** Then, write that HTML code in the box.\
-Note that if you need to **use some static resources** for the HTML (maybe some CSS and JS pages) you can save them in _**/opt/gophish/static/endpoint**_ and then access them from _**/static/\<filename>**_
-{% endhint %}
+*Usually you will need to modify the HTML code of the page and make some tests in local (maybe using some Apache server) **until you like the results.** Then, write that HTML code in the box.\
+Note that if you need to **use some static resources** for the HTML (maybe some CSS and JS pages) you can save them in _**/opt/gophish/static/endpoint**_ and then access them from _**/static/\<filename>**_*
 
-{% hint style="info" %}
-For the redirection you could **redirect the users to the legit main web page** of the victim, or redirect them to _/static/migration.html_ for example, put some **spinning wheel (**[**https://loading.io/**](https://loading.io)**) for 5 seconds and then indicate that the process was successful**.
-{% endhint %}
+*For the redirection you could **redirect the users to the legit main web page** of the victim, or redirect them to _/static/migration.html_ for example, put some **spinning wheel (**[**https://loading.io/**](https://loading.io)**) for 5 seconds and then indicate that the process was successful**.*
 
 ### Users & Groups
 
@@ -425,9 +413,7 @@ Note that the **Sending Profile allow to send a test email to see how will the f
 
 ![](<../.gitbook/assets/image (396).png>)
 
-{% hint style="info" %}
-I would recommend to **send the test emails to 10min mails addresses** in order to avoid getting blacklisted making tests.
-{% endhint %}
+*I would recommend to **send the test emails to 10min mails addresses** in order to avoid getting blacklisted making tests.*
 
 Once everything is ready, just launch the campaign!
 

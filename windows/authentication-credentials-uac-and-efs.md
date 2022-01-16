@@ -104,9 +104,7 @@ If **`0`**(default), the **built-in Administrator account can** do remote admini
 
 ### UAC bypass
 
-{% hint style="info" %}
-Note that if you have graphical access to the victim, UAC bypass is straight forward as you can simply click on "Yes" when the UAS prompt appears
-{% endhint %}
+*Note that if you have graphical access to the victim, UAC bypass is straight forward as you can simply click on "Yes" when the UAS prompt appears*
 
 It is important to mention that it is **much harder to bypass the UAC if it is in the highest security level (Always) than if it is in any of the other levels (Default).**
 
@@ -124,9 +122,7 @@ whoami /groups | findstr Level
 
 If you have a shell with a user that is inside the Administrators group you can **mount the C$** shared via SMB (file system) local in a new disk and you will have **access to everything inside the file system** (even Administrator home folder).
 
-{% hint style="info" %}
-**Looks like this trick isn't working anymore**
-{% endhint %}
+***Looks like this trick isn't working anymore***
 
 ```bash
 net use Z: \\127.0.0.1\c$

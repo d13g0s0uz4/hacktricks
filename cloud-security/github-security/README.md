@@ -54,9 +54,7 @@ If you somehow already have credentials for a user inside an organization you ca
 
 Note that **2FA may be used** so you will only be able to access this information if you can also **pass that check**.
 
-{% hint style="info" %}
-Note that if you **manage to steal the `user_session` cookie** (currently configured with SameSite: Lax) you can **completely impersonate the user** without needing credentials or 2FA.
-{% endhint %}
+*Note that if you **manage to steal the `user_session` cookie** (currently configured with SameSite: Lax) you can **completely impersonate the user** without needing credentials or 2FA.*
 
 Check the section below about [**branch protections bypasses**](./#branch-protection-bypass) in case it's useful.
 
@@ -186,9 +184,7 @@ curl -X POST \
   -d '{"head":"<branch_name>","base":"master", "title":"title"}'
 ```
 
-{% hint style="danger" %}
-Note that in several occasions you will be able to find **github user tokens inside Github Actions envs or in the secrets**. These tokens may give you more privileges over the repository and organization.
-{% endhint %}
+*Note that in several occasions you will be able to find **github user tokens inside Github Actions envs or in the secrets**. These tokens may give you more privileges over the repository and organization.*
 
 #### List secrets in Github Action output
 

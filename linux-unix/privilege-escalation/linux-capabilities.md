@@ -684,9 +684,7 @@ clean:
 ```
 {% endcode %}
 
-{% hint style="warning" %}
-The blank char before each make word in the Makefile **must be a tab, not spaces**!
-{% endhint %}
+*The blank char before each make word in the Makefile **must be a tab, not spaces**!*
 
 Execute `make` to compile it.
 
@@ -910,9 +908,7 @@ int main(int argc, char * argv[]) {
 }
 ```
 
-{% hint style="danger" %}
-I exploit needs to find a pointer to something mounted on the host. The original exploit used the file `/.dockerinit` and this modified version uses `/etc/hostname`. **If the exploit isn't working** maybe you need to set a different file. To find a file that is mounted in the host just execute `mount` command:
-{% endhint %}
+*I exploit needs to find a pointer to something mounted on the host. The original exploit used the file `/.dockerinit` and this modified version uses `/etc/hostname`. **If the exploit isn't working** maybe you need to set a different file. To find a file that is mounted in the host just execute `mount` command:*
 
 ![](<../../.gitbook/assets/image (407) (2).png>)
 
@@ -1235,9 +1231,7 @@ if(status == 0):
 python setcapability.py /usr/bin/python2.7
 ```
 
-{% hint style="warning" %}
-Note that if you set a new capability to the binary with CAP\_SETFCAP, you will lose this cap.
-{% endhint %}
+*Note that if you set a new capability to the binary with CAP\_SETFCAP, you will lose this cap.*
 
 Once you have [SETUID capability](linux-capabilities.md#cap\_setuid) you can go to it's section to see how to escalate privileges.
 
@@ -1407,14 +1401,12 @@ f=open("/path/to/file.sh",'a+')
 f.write('New content for the file\n')
 ```
 
-{% hint style="info" %}
-Note that usually this immutable attribute is set and remove using:
+*Note that usually this immutable attribute is set and remove using:
 
 ```bash
 sudo chattr +i file.txt
 sudo chattr -i file.txt
-```
-{% endhint %}
+```*
 
 ## References
 

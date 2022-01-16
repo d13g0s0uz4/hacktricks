@@ -172,11 +172,9 @@ steps:
       example-command "$SUPER_SECRET"
 ```
 
-{% hint style="warning" %}
-Secrets **can only be accessed from the Github Actions** that have them declared.
+*Secrets **can only be accessed from the Github Actions** that have them declared.
 
-Once configured in the repo or the organizations **users of github won't be able to access them again**, they just will be able to **change them**.
-{% endhint %}
+Once configured in the repo or the organizations **users of github won't be able to access them again**, they just will be able to **change them**.*
 
 Therefore, the **only way to steal github secrets is to be able to access the machine that is executing the Github Action** (in that scenario you will be able to access only the secrets declared for the Action).
 
@@ -211,13 +209,11 @@ If the custom **Github Runner is configured in a machine inside AWS or GCP** for
 
 If all actions (or a malicious action) are allowed a user could use a **Github action** that is **malicious** and will **compromise** the **container** where it's being executed.
 
-{% hint style="danger" %}
-A **malicious Github Action** run could be **abused** by the attacker to:
+*A **malicious Github Action** run could be **abused** by the attacker to:
 
 * **Steal all the secrets** the Action has access to
 * **Move laterally** if the Action is executed inside a **third party infrastructure** where the SA token used to run the machine can be accessed (probably via the metadata service)
-* **Abuse the token** used by the **workflow** to **steal the code of the repo** where the Action is executed or **even modify it**.
-{% endhint %}
+* **Abuse the token** used by the **workflow** to **steal the code of the repo** where the Action is executed or **even modify it**.*
 
 ## Branch Protections
 
@@ -225,9 +221,7 @@ Branch protections are designed to **not give complete control of a repository**
 
 The **branch protections of a repository** can be found in _https://github.com/\<orgname>/\<reponame>/settings/branches_
 
-{% hint style="info" %}
-It's **not possible to set a branch protection at organization level**. So all of them must be declared on each repo.
-{% endhint %}
+*It's **not possible to set a branch protection at organization level**. So all of them must be declared on each repo.*
 
 Different protections can be applied to a branch (like to master):
 
@@ -244,9 +238,7 @@ Different protections can be applied to a branch (like to master):
 * **Include administrators**. If this isn't set, admins can bypass the restrictions.
 * **Restrict who can push to matching branches**. Restrict who can send a PR.
 
-{% hint style="info" %}
-As you can see, even if you managed to obtain some credentials of a user, **repos might be protected avoiding you to pushing code to master** for example to compromise the CI/CD pipeline.
-{% endhint %}
+*As you can see, even if you managed to obtain some credentials of a user, **repos might be protected avoiding you to pushing code to master** for example to compromise the CI/CD pipeline.*
 
 ## References
 

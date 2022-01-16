@@ -1,9 +1,7 @@
 # Linux Privilege Escalation
 
-{% hint style="danger" %}
-Do you use **Hacktricks every day**? Did you find the book **very** **useful**? Would you like to **receive extra help** with cybersecurity questions? Would you like to **find more and higher quality content on Hacktricks**?\
-[**Support Hacktricks through github sponsors**](https://github.com/sponsors/carlospolop) **so we can dedicate more time to it and also get access to the Hacktricks private group where you will get the help you need and much more!**
-{% endhint %}
+*Do you use **Hacktricks every day**? Did you find the book **very** **useful**? Would you like to **receive extra help** with cybersecurity questions? Would you like to **find more and higher quality content on Hacktricks**?\
+[**Support Hacktricks through github sponsors**](https://github.com/sponsors/carlospolop) **so we can dedicate more time to it and also get access to the Hacktricks private group where you will get the help you need and much more!***
 
 If you want to know about my **latest modifications**/**additions** or you have **any suggestion for HackTricks** or **PEASS**, **join the** [**💬**](https://emojipedia.org/speech-balloon/)[**telegram group**](https://t.me/peass), or **follow** me on **Twitter** [**🐦**](https://github.com/carlospolop/hacktricks/tree/7af18b62b3bdc423e11444677a6a73d4043511e9/\[https:/emojipedia.org/bird/README.md)[**@carlospolopm**](https://twitter.com/carlospolopm)**.**\
 If you want to **share some tricks with the community** you can also submit **pull requests** to [**https://github.com/carlospolop/hacktricks**](https://github.com/carlospolop/hacktricks) that will be reflected in this book and don't forget to **give ⭐** on **github** to **motivate** **me** to continue developing this book.
@@ -207,9 +205,7 @@ rpm -qa #Centos
 
 If you have SSH access to the machine you could also use **openVAS** to check for outdated and vulnerable software installed inside the machine.
 
-{% hint style="info" %}
-_Note that these commands will show a lot of information that will mostly be useless, therefore it's recommended some application like OpenVAS or similar that will check if any installed software version is vulnerable to known exploits_
-{% endhint %}
+*_Note that these commands will show a lot of information that will mostly be useless, therefore it's recommended some application like OpenVAS or similar that will check if any installed software version is vulnerable to known exploits_*
 
 ## Processes
 
@@ -234,16 +230,14 @@ Some services of a server save **credentials in clear text inside the memory**.\
 Normally you will need **root privileges** to read the memory of processes that belong to other users, therefore this is usually more useful when you are already root and want to discover more credentials.\
 However, remember that **as a regular user you can read the memory of the processes you own**.
 
-{% hint style="warning" %}
-Note that nowadays most machines **don't allow ptrace by default** which means that you  cannot dump other processes that belongs to your unprivileged user.
+*Note that nowadays most machines **don't allow ptrace by default** which means that you  cannot dump other processes that belongs to your unprivileged user.
 
 The file _**/proc/sys/kernel/yama/ptrace\_scope**_ controls the accessibility of ptrace:
 
 * **kernel.yama.ptrace\_scope = 0**: all processes can be debugged, as long as they have same uid. This is the classical way of how ptracing worked.
 * **kernel.yama.ptrace\_scope = 1**: only a parent process can be debugged.
 * **kernel.yama.ptrace\_scope = 2**: Only admin can use ptrace, as it required CAP\_SYS\_PTRACE capability.
-* **kernel.yama.ptrace\_scope = 3**: No processes may be traced with ptrace. Once set, a reboot is needed to enable ptracing again.
-{% endhint %}
+* **kernel.yama.ptrace\_scope = 3**: No processes may be traced with ptrace. Once set, a reboot is needed to enable ptracing again.*
 
 #### GDB
 
@@ -1449,9 +1443,7 @@ import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s
 There is a vulnerability on `logrotate`that allows a user with **write permissions over a log file** or **any** of its **parent directories** to make `logrotate`write **a file in any location**. If **logrotate** is being executed by **root**, then the user will be able to write any file in _**/etc/bash\_completion.d/**_ that will be executed by any user that login.\
 So, if you have **write perms** over a **log file** **or** any of its **parent folder**, you can **privesc** (on most linux distributions, logrotate is executed automatically once a day as **user root**). Also, check if apart of _/var/log_ there are more files being **rotated**.
 
-{% hint style="info" %}
-This vulnerability affects `logrotate` version `3.15.1` and below
-{% endhint %}
+*This vulnerability affects `logrotate` version `3.15.1` and below*
 
 More detailed information about the vulnerability can be found in this page: [https://tech.feedyourhead.at/content/details-of-a-logrotate-race-condition](https://tech.feedyourhead.at/content/details-of-a-logrotate-race-condition).
 

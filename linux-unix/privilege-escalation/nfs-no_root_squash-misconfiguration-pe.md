@@ -45,12 +45,10 @@ cd <SHAREDD_FOLDER>
 
 ### Local Exploit
 
-{% hint style="info" %}
-Note that if you can create a **tunnel from your machine to the victim machine you can still use the Remote version to exploit this privilege escalation tunnelling the required ports**.\
+*Note that if you can create a **tunnel from your machine to the victim machine you can still use the Remote version to exploit this privilege escalation tunnelling the required ports**.\
 The following trick is in case the file `/etc/exports` **indicates an IP**. In this case you **won't be able to use** in any case the **remote exploit** and you will need to **abuse this trick**.\
 Another required requirement for the exploit to work is that **the export inside `/etc/export`** **must be using the `insecure` flag**.\
-\--_I'm not sure that if `/etc/export` is indicating an IP address this trick will work_--
-{% endhint %}
+\--_I'm not sure that if `/etc/export` is indicating an IP address this trick will work_--*
 
 **Trick copied from** [**https://www.errno.fr/nfs\_privesc.html**](https://www.errno.fr/nfs\_privesc.html)****
 

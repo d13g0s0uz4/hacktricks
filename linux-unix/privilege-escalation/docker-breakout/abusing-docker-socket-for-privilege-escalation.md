@@ -22,13 +22,11 @@ You could also **abuse a mount to escalate privileges** inside the container.
   * Run `fdisk -l` in the host to find the `</dev/sda1>` device to mount
 * **`-v /tmp:/host`** -> If for some reason you can **just mount some directory** from the host and you have access inside the host. Mount it and create a **`/bin/bash`** with **suid** in the mounted directory so you can **execute it from the host and escalate to root**.
 
-{% hint style="info" %}
-Note that maybe you cannot mount the folder `/tmp` but you can mount a **different writable folder**. You can find writable directories using: `find / -writable -type d 2>/dev/null`
+*Note that maybe you cannot mount the folder `/tmp` but you can mount a **different writable folder**. You can find writable directories using: `find / -writable -type d 2>/dev/null`
 
 **Note that not all the directories in a linux machine will support the suid bit!** In order to check which directories support the suid bit run `mount | grep -v "nosuid"` For example usually `/dev/shm` , `/run` , `/proc` , `/sys/fs/cgroup` and `/var/lib/lxcfs` don't support the suid bit.
 
-Note also that if you can **mount `/etc`** or any other folder **containing configuration files**, you may change them from the docker container as root in order to **abuse them in the host** and escalate privileges (maybe modifying `/etc/shadow`)
-{% endhint %}
+Note also that if you can **mount `/etc`** or any other folder **containing configuration files**, you may change them from the docker container as root in order to **abuse them in the host** and escalate privileges (maybe modifying `/etc/shadow`)*
 
 ### Escaping from the container
 

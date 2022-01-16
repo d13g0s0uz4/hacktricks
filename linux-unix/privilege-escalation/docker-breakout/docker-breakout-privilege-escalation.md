@@ -28,22 +28,18 @@ docker images
 docker run -it -v /:/host/ ubuntu:18.04 chroot /host/ bash
 ```
 
-{% hint style="info" %}
-In case the **docker socket is in an unexpected place** you can still communicate with it using the **`docker`** command with the parameter **`-H unix:///path/to/docker.sock`**
-{% endhint %}
+*In case the **docker socket is in an unexpected place** you can still communicate with it using the **`docker`** command with the parameter **`-H unix:///path/to/docker.sock`***
 
 Docker daemon might be also [listening in a port (by default 2375, 2376)](../../../pentesting/2375-pentesting-docker.md) or on Systemd-based systems, communication with the Docker daemon can occur over the Systemd socket `fd://`.
 
-{% hint style="info" %}
-Additionally, pay attention to the runtime sockets of other high-level runtimes:
+*Additionally, pay attention to the runtime sockets of other high-level runtimes:
 
 * dockershim: `unix:///var/run/dockershim.sock`
 * containerd: `unix:///run/containerd/containerd.sock`
 * cri-o: `unix:///var/run/crio/crio.sock`
 * frakti: `unix:///var/run/frakti.sock`
 * rktlet: `unix:///var/run/rktlet.sock`
-* ...
-{% endhint %}
+* ...*
 
 ## Capabilities Abuse Escape
 
@@ -364,9 +360,7 @@ This will trigger the payload which is present in the main.go file.
 
 For more information: [https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html)
 
-{% hint style="info" %}
-There are other CVEs the container can be vulnerable too, you can find a list in [https://0xn3va.gitbook.io/cheat-sheets/container/escaping/cve-list](https://0xn3va.gitbook.io/cheat-sheets/container/escaping/cve-list)
-{% endhint %}
+*There are other CVEs the container can be vulnerable too, you can find a list in [https://0xn3va.gitbook.io/cheat-sheets/container/escaping/cve-list](https://0xn3va.gitbook.io/cheat-sheets/container/escaping/cve-list)*
 
 ### Container Breakout through Usermode helper Template
 

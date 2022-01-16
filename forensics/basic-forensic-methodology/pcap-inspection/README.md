@@ -1,8 +1,6 @@
 # Pcap Inspection
 
-{% hint style="info" %}
-A note about **PCAP** vs **PCAPNG**: there are two versions of the PCAP file format; **PCAPNG is newer and not supported by all tools**. You may need to convert a file from PCAPNG to PCAP using Wireshark or another compatible tool, in order to work with it in some other tools.
-{% endhint %}
+*A note about **PCAP** vs **PCAPNG**: there are two versions of the PCAP file format; **PCAPNG is newer and not supported by all tools**. You may need to convert a file from PCAPNG to PCAP using Wireshark or another compatible tool, in order to work with it in some other tools.*
 
 ## Online tools for pcaps
 
@@ -16,9 +14,7 @@ The following tools are useful to extract statistic, files...
 
 ### Wireshark
 
-{% hint style="info" %}
-**If you are going to analyze a PCAP you basically must to know how to use Wireshark**
-{% endhint %}
+***If you are going to analyze a PCAP you basically must to know how to use Wireshark***
 
 You can find some Wireshark trick in:
 

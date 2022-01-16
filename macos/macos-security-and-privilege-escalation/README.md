@@ -200,13 +200,11 @@ Gatekeeper builds upon **File Quarantine.**\
 ****Upon download of an application, a particular **extended file attribute** ("quarantine flag") can be **added** to the **downloaded** **file**. This attribute **is added by the application that downloads the file**, such as a **web** **browser** or email client, but is not usually added by others like common BitTorrent client software.\
 When a user executes a "quarantined" file, **Gatekeeper** is the one that **performs the mentioned actions** to allow the execution of the file.
 
-{% hint style="info" %}
-&#x20;**Checking** the **validity** of code signatures is a **resource-intensive** process that includes generating cryptographic **hashes** of the code and all its bundled resources. Furthermore, checking certificate validity involves doing an **online check** to Apple's servers to see if it has been revoked after it was issued. For these reasons, a full code signature and notarization check is **impractical to run every time an app is launched**.
+*&#x20;**Checking** the **validity** of code signatures is a **resource-intensive** process that includes generating cryptographic **hashes** of the code and all its bundled resources. Furthermore, checking certificate validity involves doing an **online check** to Apple's servers to see if it has been revoked after it was issued. For these reasons, a full code signature and notarization check is **impractical to run every time an app is launched**.
 
 Therefore, these checks are **only run when executing apps with the quarantined attribute.**
 
-**Safari and other web browsers and applications are the ones that**
-{% endhint %}
+**Safari and other web browsers and applications are the ones that***
 
 It's possible to **check it's status and enable/disable** (root required) with:
 
@@ -322,9 +320,7 @@ To start an application with a sandbox config you can use:
 sandbox-exec -f example.sb /Path/To/The/Application
 ```
 
-{% hint style="info" %}
-Note that the **Apple-authored** **software** that runs on **Windows** **doesn’t have additional security precautions**, such as application sandboxing.
-{% endhint %}
+*Note that the **Apple-authored** **software** that runs on **Windows** **doesn’t have additional security precautions**, such as application sandboxing.*
 
 Bypasses examples:
 
@@ -468,12 +464,10 @@ The **main difference between agents and daemons is that agents are loaded when 
 
 There are cases where an **agent needs to be executed before the user logins**, these are called **PreLoginAgents**. For example, this is useful to provide assistive technology at login. They can be found also in `/Library/LaunchAgents`(see [**here**](https://github.com/HelmutJ/CocoaSampleCode/tree/master/PreLoginAgents) an example).
 
-{% hint style="info" %}
-New Daemons or Agents config files will be **loaded after next reboot or using** `launchctl load <target.plist>` It's **also possible to load .plist files without that extension** with `launchctl -F <file>` (however those plist files won't be automatically loaded after reboot).\
+*New Daemons or Agents config files will be **loaded after next reboot or using** `launchctl load <target.plist>` It's **also possible to load .plist files without that extension** with `launchctl -F <file>` (however those plist files won't be automatically loaded after reboot).\
 It's also possible to **unload** with `launchctl unload <target.plist>` (the process pointed by it will be terminated),
 
-To **ensure** that there isn't **anything** (like an override) **preventing** an **Agent** or **Daemon** **from** **running** run: `sudo launchctl load -w /System/Library/LaunchDaemos/com.apple.smdb.plist`
-{% endhint %}
+To **ensure** that there isn't **anything** (like an override) **preventing** an **Agent** or **Daemon** **from** **running** run: `sudo launchctl load -w /System/Library/LaunchDaemos/com.apple.smdb.plist`*
 
 List all the agents and daemons loaded by the current user:
 
@@ -603,15 +597,11 @@ This little-known service may **not be much use to a Mac admin**, but to a threa
 ls -l /private/var/db/emondClients
 ```
 
-{% hint style="danger" %}
-**As this isn't used much, anything in that folder should be suspicious**
-{% endhint %}
+***As this isn't used much, anything in that folder should be suspicious***
 
 ### Startup Items
 
-{% hint style="danger" %}
-**This is deprecated, so nothing should be found in the following directories.**
-{% endhint %}
+***This is deprecated, so nothing should be found in the following directories.***
 
 A **StartupItem** is a **directory** that gets **placed** in one of these two folders. `/Library/StartupItems/` or `/System/Library/StartupItems/`
 
@@ -659,9 +649,7 @@ RunService "$1"
 
 ### /etc/rc.common
 
-{% hint style="danger" %}
-**This isn't working in modern MacOS versions**
-{% endhint %}
+***This isn't working in modern MacOS versions***
 
 It's also possible to place here **commands that will be executed at startup.** Example os regular rc.common script:
 
@@ -856,9 +844,7 @@ sudo vmmap <securityd PID> | grep MALLOC_TINY
 sudo ./keychaindump
 ```
 
-{% hint style="danger" %}
-Base on this comment [https://github.com/juuso/keychaindump/issues/10#issuecomment-751218760](https://github.com/juuso/keychaindump/issues/10#issuecomment-751218760) it looks like this tools isn't working anymore in Big Sur.
-{% endhint %}
+*Base on this comment [https://github.com/juuso/keychaindump/issues/10#issuecomment-751218760](https://github.com/juuso/keychaindump/issues/10#issuecomment-751218760) it looks like this tools isn't working anymore in Big Sur.*
 
 ### chainbreaker
 
@@ -962,13 +948,11 @@ This is like the [**LD\_PRELOAD on Linux**](../../linux-unix/privilege-escalatio
 
 This technique may be also **used as an ASEP technique** as every application installed has a plist called "Info.plist" that allows for the **assigning of environmental variables** using a key called `LSEnvironmental`.
 
-{% hint style="info" %}
-Since 2012 when [OSX.FlashBack.B](https://www.f-secure.com/v-descs/trojan-downloader\_osx\_flashback\_b.shtml) \[22] abused this technique, **Apple has drastically reduced the “power”** of the DYLD\_INSERT\_LIBRARIES.&#x20;
+*Since 2012 when [OSX.FlashBack.B](https://www.f-secure.com/v-descs/trojan-downloader\_osx\_flashback\_b.shtml) \[22] abused this technique, **Apple has drastically reduced the “power”** of the DYLD\_INSERT\_LIBRARIES.&#x20;
 
 For example the dynamic loader (dyld) ignores the DYLD\_INSERT\_LIBRARIES environment variable in a wide range of cases, such as setuid and platform binaries. And, starting with macOS Catalina, only 3rd-party applications that are not compiled with the hardened runtime (which “protects the runtime integrity of software” \[22]), or have an exception such as the com.apple.security.cs.allow-dyld-environment-variables entitlement) are susceptible to dylib insertions.&#x20;
 
-For more details on the security features afforded by the hardened runtime, see Apple’s documentation: “[Hardened Runtime](https://developer.apple.com/documentation/security/hardened\_runtime)”&#x20;
-{% endhint %}
+For more details on the security features afforded by the hardened runtime, see Apple’s documentation: “[Hardened Runtime](https://developer.apple.com/documentation/security/hardened\_runtime)”&#x20;*
 
 ## Interesting Information in Databases
 

@@ -524,9 +524,7 @@ Once you have configured the Amazon Inspector Role, the AWS Agents are Installed
 
 Amazon Inspector has a pre-defined set of rules, grouped into packages. Each Assessment Template defines which rules packages to be included in the test. Instances are being evaluated against rules packages included in the assessment template.
 
-{% hint style="info" %}
-Note that nowadays AWS already allow you to **autocreate** all the necesary **configurations** and even automatically **install the agents inside the EC2 instances.**
-{% endhint %}
+*Note that nowadays AWS already allow you to **autocreate** all the necesary **configurations** and even automatically **install the agents inside the EC2 instances.***
 
 ### **Reporting**
 

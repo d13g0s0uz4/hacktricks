@@ -113,9 +113,7 @@ We can even see our pipe with powershell:
 
 ## Token Impersonation
 
-{% hint style="info" %}
-Note that in order to impersonate the token of the client process you need to have (the server process creating the pipe) the **`SeImpersonate`** token privilege
-{% endhint %}
+*Note that in order to impersonate the token of the client process you need to have (the server process creating the pipe) the **`SeImpersonate`** token privilege*
 
 It is possible for the named pipe server to impersonate the named pipe client's security context by leveraging a `ImpersonateNamedPipeClient` API call which in turn changes the named pipe server's current thread's token with that of the named pipe client's token.
 

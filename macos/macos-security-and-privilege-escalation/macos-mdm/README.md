@@ -20,9 +20,7 @@ Administrators can leverage DEP to automatically enroll devices in their organiz
 * Most useful when the **device** is **brand new**
 * Can also be useful for **reprovisioning** workflows (**wiped** with fresh install of the OS)
 
-{% hint style="danger" %}
-Unfortunately, if an organization has not taken additional steps to **protect their MDM enrollment**, a simplified end-user enrollment process through DEP can also mean a simplified process for **attackers to enroll a device of their choosing in the organization’s MDM** server, assuming the "identity" of a corporate device.
-{% endhint %}
+*Unfortunately, if an organization has not taken additional steps to **protect their MDM enrollment**, a simplified end-user enrollment process through DEP can also mean a simplified process for **attackers to enroll a device of their choosing in the organization’s MDM** server, assuming the "identity" of a corporate device.*
 
 ### Basics What is SCEP (Simple Certificate Enrolment Protocol)?
 

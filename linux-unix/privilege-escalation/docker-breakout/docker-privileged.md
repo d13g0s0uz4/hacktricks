@@ -60,9 +60,7 @@ mount  | grep '(ro'
 
 The **/proc** file system is namespace-aware, and certain writes can be allowed, so we don't mount it read-only. However, specific directories in the /proc file system need to be **protected from writing**, and in some instances, **from reading**. In these cases, the container engines mount **tmpfs** file systems over potentially dangerous directories, preventing processes inside of the container from using them.
 
-{% hint style="info" %}
-**tmpfs** is a file system that stores all the files in virtual memory. tmpfs doesn't create any files on your hard drive. So if you unmount a tmpfs file system, all the files residing in it are lost for ever.
-{% endhint %}
+***tmpfs** is a file system that stores all the files in virtual memory. tmpfs doesn't create any files on your hard drive. So if you unmount a tmpfs file system, all the files residing in it are lost for ever.*
 
 {% tabs %}
 {% tab title="Inside default container" %}

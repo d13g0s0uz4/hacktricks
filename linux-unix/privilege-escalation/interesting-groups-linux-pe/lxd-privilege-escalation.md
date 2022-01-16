@@ -44,10 +44,8 @@ lxc list #List containers
 lxc config device add privesc host-root disk source=/ path=/mnt/root recursive=true
 ```
 
-{% hint style="danger" %}
-If you find this error _**Error: No storage pool found. Please create a new storage pool**_\
-Run **`lxc init`** and **repeat** the previous chunk of commands
-{% endhint %}
+*If you find this error _**Error: No storage pool found. Please create a new storage pool**_\
+Run **`lxc init`** and **repeat** the previous chunk of commands*
 
 Execute the container:
 

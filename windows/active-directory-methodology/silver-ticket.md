@@ -172,9 +172,7 @@ Check the following page to learn **more ways to connect with a remote host usin
 
 {% page-ref page="../ntlm/winrm.md" %}
 
-{% hint style="warning" %}
-Note that **winrm must be active and listening** on the remote computer to access it.
-{% endhint %}
+*Note that **winrm must be active and listening** on the remote computer to access it.*
 
 ### LDAP
 

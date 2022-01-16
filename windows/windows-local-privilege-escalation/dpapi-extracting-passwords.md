@@ -26,9 +26,7 @@ DPAPI is utilized to protect the following personal data:
 * Personal data in any application programmatically protected with the API function CryptProtectData. For example, in Skype, Windows Rights Management Services, Windows Media, MSN messenger, Google Talk etc.
 * ...
 
-{% hint style="info" %}
-An example of a successful and clever way to protect data using DPAPI is the implementation of the auto-completion password encryption algorithm in Internet Explorer. To encrypt the login and password for a certain web page, it calls the CryptProtectData function, where in the optional entropy parameter it specifies the address of the web page. Thus, unless one knows the original URL where the password was entered, nobody, not even Internet Explorer itself, can decrypt that data back.
-{% endhint %}
+*An example of a successful and clever way to protect data using DPAPI is the implementation of the auto-completion password encryption algorithm in Internet Explorer. To encrypt the login and password for a certain web page, it calls the CryptProtectData function, where in the optional entropy parameter it specifies the address of the web page. Thus, unless one knows the original URL where the password was entered, nobody, not even Internet Explorer itself, can decrypt that data back.*
 
 ## Master Keys&#x20;
 

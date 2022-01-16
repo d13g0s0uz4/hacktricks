@@ -41,9 +41,7 @@ system('ls')
 
 Remember that the _**open**_ and _**read**_ functions can be useful to **read files** inside the python sandbox and to **write some code** that you could **execute** to **bypass** the sandbox.
 
-{% hint style="danger" %}
-**Python2 input()** function allows to execute python code before the program crashes.
-{% endhint %}
+***Python2 input()** function allows to execute python code before the program crashes.*
 
 Python try to **load libraries from the current directory first** (the following command will print where is python loading modules from): `python3 -c 'import sys; print(sys.path)'`
 
@@ -87,9 +85,7 @@ You can download the package to create the reverse shell here. Please, note that
 
 {% file src="../../../.gitbook/assets/Reverse.tar.gz" %}
 
-{% hint style="info" %}
-This package is called `Reverse`.However, it was specially crafted so when you exit the reverse shell the rest of the installation will fail, so you **won't leave any extra python package installed on the server** when you leave.
-{% endhint %}
+*This package is called `Reverse`.However, it was specially crafted so when you exit the reverse shell the rest of the installation will fail, so you **won't leave any extra python package installed on the server** when you leave.*
 
 ## Eval-ing python code
 
@@ -368,9 +364,7 @@ __builtins__: _ModuleLock, _DummyModuleLock, _ModuleLockManager, ModuleSpec, Fil
 
 ## Recursive Search of Builtins, Globals...
 
-{% hint style="warning" %}
-This is just **awesome**. If you are **looking for an object like globals, builtins, open or anything** just use this script to **recursively find places were you can find that object.**
-{% endhint %}
+*This is just **awesome**. If you are **looking for an object like globals, builtins, open or anything** just use this script to **recursively find places were you can find that object.***
 
 ```python
 import os, sys # Import these to find more gadgets
@@ -498,10 +492,8 @@ You can check the output of this script in this page:
 
 If you **send** a **string** to python that is going to be **formatted**, you can use `{}` to access **python internal information.** You can use the previous examples to access globals or builtins for example.
 
-{% hint style="info" %}
-However, there is a **limitation**, you can only use the symbols `.[]`, so you **won't be able to execute arbitrary code**, just to read information. \
-_**If you know how to execute code through this vulnerability, please contact me.**_
-{% endhint %}
+*However, there is a **limitation**, you can only use the symbols `.[]`, so you **won't be able to execute arbitrary code**, just to read information. \
+_**If you know how to execute code through this vulnerability, please contact me.**_*
 
 ```python
 # Example from https://www.geeksforgeeks.org/vulnerability-in-str-format-in-python/
@@ -564,9 +556,7 @@ class HAL9000(object):
 
 ## Dissecting Python Objects
 
-{% hint style="info" %}
-If you want to **learn** about **python bytecode** in depth read these **awesome** post about the topic: [**https://towardsdatascience.com/understanding-python-bytecode-e7edaae8734d**](https://towardsdatascience.com/understanding-python-bytecode-e7edaae8734d)****
-{% endhint %}
+*If you want to **learn** about **python bytecode** in depth read these **awesome** post about the topic: [**https://towardsdatascience.com/understanding-python-bytecode-e7edaae8734d**](https://towardsdatascience.com/understanding-python-bytecode-e7edaae8734d)*****
 
 In some CTFs you could be provided the name of a **custom function where the flag** resides and you need to see the **internals** of the **function** to extract it.
 
@@ -769,9 +759,7 @@ function_type(code_obj, mydict, None, None, None)("secretcode")
 
 ### Recreating a leaked function
 
-{% hint style="warning" %}
-In the following example we are going to take all the data needed to recreate the function from the function code object directly. In a **real example**, all the **values** to execute the function **`code_type`** is what **you will need to leak**.
-{% endhint %}
+*In the following example we are going to take all the data needed to recreate the function from the function code object directly. In a **real example**, all the **values** to execute the function **`code_type`** is what **you will need to leak**.*
 
 ```python
 fc = get_flag.__code__

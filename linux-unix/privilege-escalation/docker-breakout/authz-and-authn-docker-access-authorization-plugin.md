@@ -95,13 +95,11 @@ host> /tmp/bash
  -p #This will give you a shell as root
 ```
 
-{% hint style="info" %}
-Note that maybe you cannot mount the folder `/tmp` but you can mount a **different writable folder**. You can find writable directories using: `find / -writable -type d 2>/dev/null`
+*Note that maybe you cannot mount the folder `/tmp` but you can mount a **different writable folder**. You can find writable directories using: `find / -writable -type d 2>/dev/null`
 
 **Note that not all the directories in a linux machine will support the suid bit!** In order to check which directories support the suid bit run `mount | grep -v "nosuid"` For example usually `/dev/shm` , `/run` , `/proc` , `/sys/fs/cgroup` and `/var/lib/lxcfs` don't support the suid bit.
 
-Note also that if you can **mount `/etc`** or any other folder **containing configuration files**, you may change them from the docker container as root in order to **abuse them in the host** and escalate privileges (maybe modifying `/etc/shadow`)
-{% endhint %}
+Note also that if you can **mount `/etc`** or any other folder **containing configuration files**, you may change them from the docker container as root in order to **abuse them in the host** and escalate privileges (maybe modifying `/etc/shadow`)*
 
 ### Unchecked API Endpoint
 
@@ -126,9 +124,7 @@ docker exec -it f6932bc153ad chroot /host bash #Get a shell inside of it
 #You can access the host filesystem
 ```
 
-{% hint style="warning" %}
-Note how in this example we are using the **`Binds`** param as a root level key in the JSON but in the API it appears under the key **`HostConfig`**
-{% endhint %}
+*Note how in this example we are using the **`Binds`** param as a root level key in the JSON but in the API it appears under the key **`HostConfig`***
 
 #### Binds in HostConfig
 
@@ -168,9 +164,7 @@ capsh --print
 #You can abuse the SYS_MODULE capability
 ```
 
-{% hint style="info" %}
-The **`HostConfig`** is the key that usually contains the **interesting** **privileges** to escape from the container. However, as we have discussed previously, note how using Binds outside of it also works and may allow you to bypass restrictions.
-{% endhint %}
+*The **`HostConfig`** is the key that usually contains the **interesting** **privileges** to escape from the container. However, as we have discussed previously, note how using Binds outside of it also works and may allow you to bypass restrictions.*
 
 ### Disabling Plugin
 

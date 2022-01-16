@@ -437,9 +437,7 @@ If you have success creating a new admin account, you can log on to the [Google 
 
 Another promising way to **escalate privileges inside the cloud is to enumerate as much sensitive information as possible** from the services that are being used. Here you can find some enumeration recommendations for some GCP services, but more could be used so feel free to submit PRs indicating ways to enumerate more services:
 
-{% hint style="info" %}
-Note that you can enumerate most resources with `list` (list items of that type), `describe` (describe parent and children items) and  `get-iam-policy` (get policy attached to that specific resource).&#x20;
-{% endhint %}
+*Note that you can enumerate most resources with `list` (list items of that type), `describe` (describe parent and children items) and  `get-iam-policy` (get policy attached to that specific resource).&#x20;*
 
 There is a gcloud API endpoint that aims to **list all the resources the accessible from the used user accoun**t, it's in alpha bet and only supports a couple of resources, but maybe in the future you can list all you have access to with it: [https://helpmanual.io/man1/gcloud\_alpha\_resources\_list/](https://helpmanual.io/man1/gcloud\_alpha\_resources\_list/)&#x20;
 
