@@ -179,9 +179,7 @@ Typically, **activation profile** provided by an MDM vendor will **include the f
 As previously commented, in order to try to enrol a device into an organization **only a Serial Number belonging to that Organization is needed**. Once the device is enrolled, several organizations will install sensitive data on the new device: certificates, applications, WiFi passwords, VPN configurations [and so on](https://developer.apple.com/enterprise/documentation/Configuration-Profile-Reference.pdf).\
 Therefore, this could be a dangerous entrypoint for attackers if the enrolment process isn't correctly protected:
 
-{% content-ref url="enrolling-devices-in-other-organisations.md" %}
-[enrolling-devices-in-other-organisations.md](enrolling-devices-in-other-organisations.md)
-{% endcontent-ref %}
+- [enrolling-devices-in-other-organisations.md](enrolling-devices-in-other-organisations.md)
 
 ## **References**
 

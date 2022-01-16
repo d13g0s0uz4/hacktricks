@@ -114,9 +114,7 @@ Docker makes use of the following Linux kernel Namespaces to achieve Container i
 
 For **more information about the namespaces** check the following page:
 
-{% content-ref url="namespaces.md" %}
-[namespaces.md](namespaces.md)
-{% endcontent-ref %}
+- [namespaces.md](namespaces.md)
 
 ### cgroups
 
@@ -139,25 +137,19 @@ ls -l /proc/<PID>/ns #Get the Group and the namespaces (some may be uniq to the 
 
 Capabilities allow **finer control for the capabilities that can be allowed** for root user. Docker uses the Linux kernel capability feature to **limit the operations that can be done inside a Container** irrespective of the type of user.
 
-{% content-ref url="../linux-capabilities.md" %}
-[linux-capabilities.md](../linux-capabilities.md)
-{% endcontent-ref %}
+- [linux-capabilities.md](../linux-capabilities.md)
 
 ### Seccomp in Docker
 
 This is a security feature that allows Docker to **limit the syscalls** that can be used inside the container:
 
-{% content-ref url="seccomp.md" %}
-[seccomp.md](seccomp.md)
-{% endcontent-ref %}
+- [seccomp.md](seccomp.md)
 
 ### AppArmor in Docker
 
 **AppArmor** is a kernel enhancement to confine **containers** to a **limited** set of **resources** with **per-program profiles**.:
 
-{% content-ref url="apparmor.md" %}
-[apparmor.md](apparmor.md)
-{% endcontent-ref %}
+- [apparmor.md](apparmor.md)
 
 ### SELinux in Docker
 
@@ -165,17 +157,13 @@ This is a security feature that allows Docker to **limit the syscalls** that can
 
 Container engines launch **container processes with a single confined SELinux label**, usually `container_t`, and then set the container inside of the container to be labeled `container_file_t`. The SELinux policy rules basically say that the **`container_t` processes can only read/write/execute files labeled `container_file_t`**.
 
-{% content-ref url="../selinux.md" %}
-[selinux.md](../selinux.md)
-{% endcontent-ref %}
+- [selinux.md](../selinux.md)
 
 ### AuthZ & AuthN
 
 An authorization plugin **approves** or **denies** **requests** to the Docker **daemon** based on both the current **authentication** context and the **command** **context**. The **authentication** **context** contains all **user details** and the **authentication** **method**. The **command context** contains all the **relevant** **request** data.
 
-{% content-ref url="authz-and-authn-docker-access-authorization-plugin.md" %}
-[authz-and-authn-docker-access-authorization-plugin.md](authz-and-authn-docker-access-authorization-plugin.md)
-{% endcontent-ref %}
+- [authz-and-authn-docker-access-authorization-plugin.md](authz-and-authn-docker-access-authorization-plugin.md)
 
 ## Interesting Docker Flags
 
@@ -183,9 +171,7 @@ An authorization plugin **approves** or **denies** **requests** to the Docker **
 
 In the following page you can learn **what does the `--privileged` flag imply**:
 
-{% content-ref url="docker-privileged.md" %}
-[docker-privileged.md](docker-privileged.md)
-{% endcontent-ref %}
+- [docker-privileged.md](docker-privileged.md)
 
 ### --security-opt
 
@@ -306,17 +292,13 @@ If you’re using [Kubernetes](https://kubernetes.io/docs/concepts/configuration
 
 If you are **inside a docker container** or you have access to a user in the **docker group**, you could try to **escape and escalate privileges**:
 
-{% content-ref url="docker-breakout-privilege-escalation.md" %}
-[docker-breakout-privilege-escalation.md](docker-breakout-privilege-escalation.md)
-{% endcontent-ref %}
+- [docker-breakout-privilege-escalation.md](docker-breakout-privilege-escalation.md)
 
 ## Docker Authentication Plugin Bypass
 
 If you have access to the docker socket or have access to a user in the **docker group but your actions are being limited by a docker auth plugin**, check if you can **bypass it:**
 
-{% content-ref url="authz-and-authn-docker-access-authorization-plugin.md" %}
-[authz-and-authn-docker-access-authorization-plugin.md](authz-and-authn-docker-access-authorization-plugin.md)
-{% endcontent-ref %}
+- [authz-and-authn-docker-access-authorization-plugin.md](authz-and-authn-docker-access-authorization-plugin.md)
 
 ## Hardening Docker
 

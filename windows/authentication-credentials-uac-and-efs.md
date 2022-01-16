@@ -62,9 +62,7 @@ UAC is used to allow an **administrator user to not give administrator privilege
 
 To **differentiate** which process is executed with **low** or **high privileges** **Mandatory Integrity Controls** (MIC) are used. If you still don't know what are Windows Integrity levels check the following page:
 
-{% content-ref url="windows-local-privilege-escalation/integrity-levels.md" %}
-[integrity-levels.md](windows-local-privilege-escalation/integrity-levels.md)
-{% endcontent-ref %}
+- [integrity-levels.md](windows-local-privilege-escalation/integrity-levels.md)
 
 Some programs are **autoelevated automatically** if the **user belongs** to the **administrator group**. These binaries have inside their _**Manifests**_ the _**autoElevate**_ option with value _**True**_. The binary has to be **signed by Microsoft** also.
 

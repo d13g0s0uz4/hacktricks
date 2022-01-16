@@ -30,9 +30,7 @@ gcloud compute instances add-metadata [INSTANCE] --metadata-from-file ssh-keys=m
 
 For more information about how to **SSH** or **modify the metadata** of an instance to **escalate privileges** check this page:
 
-{% content-ref url="gcp-local-privilege-escalation-ssh-pivoting.md" %}
-[gcp-local-privilege-escalation-ssh-pivoting.md](gcp-local-privilege-escalation-ssh-pivoting.md)
-{% endcontent-ref %}
+- [gcp-local-privilege-escalation-ssh-pivoting.md](gcp-local-privilege-escalation-ssh-pivoting.md)
 
 ### Custom Metadata
 
@@ -76,9 +74,7 @@ $ gcloud compute images list --no-standard-images
 
 If you compromises a compute instance you should also check the actions mentioned in this page:
 
-{% content-ref url="gcp-local-privilege-escalation-ssh-pivoting.md" %}
-[gcp-local-privilege-escalation-ssh-pivoting.md](gcp-local-privilege-escalation-ssh-pivoting.md)
-{% endcontent-ref %}
+- [gcp-local-privilege-escalation-ssh-pivoting.md](gcp-local-privilege-escalation-ssh-pivoting.md)
 
 ## Images
 

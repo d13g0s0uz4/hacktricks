@@ -53,9 +53,7 @@ capsh --print
 
 In the following page you can **learn more about linux capabilities** and how to abuse them to escape/escalate privileges:
 
-{% content-ref url="../linux-capabilities.md" %}
-[linux-capabilities.md](../linux-capabilities.md)
-{% endcontent-ref %}
+- [linux-capabilities.md](../linux-capabilities.md)
 
 ## Escape from Privileged Containers
 
@@ -72,9 +70,7 @@ A privileged container can be created with the flag `--privileged` or disabling 
 
 The `--privileged` flag introduces significant security concerns, and the exploit relies on launching a docker container with it enabled. When using this flag, containers have full access to all devices and lack restrictions from seccomp, AppArmor, and Linux capabilities. You can r**ead all the effects of `--privileged`** in this page:
 
-{% content-ref url="docker-privileged.md" %}
-[docker-privileged.md](docker-privileged.md)
-{% endcontent-ref %}
+- [docker-privileged.md](docker-privileged.md)
 
 ### Mounting Disk
 
@@ -204,9 +200,7 @@ cat /output
 
 Find an **explanation of the technique** in:
 
-{% content-ref url="docker-breakout-privilege-escalation/docker-release_agent-cgroups-escape.md" %}
-[docker-release\_agent-cgroups-escape.md](docker-breakout-privilege-escalation/docker-release\_agent-cgroups-escape.md)
-{% endcontent-ref %}
+- [docker-release\_agent-cgroups-escape.md](docker-breakout-privilege-escalation/docker-release\_agent-cgroups-escape.md)
 
 &#x20;`--privileged` **provides far more permissions** than needed to escape a docker container via this method. In reality, the “only” requirements are:
 
@@ -225,9 +219,7 @@ A container would be vulnerable to this technique if run with the flags: `--secu
 
 In the previous exploits the **absolute path of the continer inside the hosts filesystem is disclosed**. However, this isn’t always the case. In cases where you **don’t know the absolute path of the continer inside the host** you can use this technique:
 
-{% content-ref url="docker-breakout-privilege-escalation/release_agent-exploit-relative-paths-to-pids.md" %}
-[release\_agent-exploit-relative-paths-to-pids.md](docker-breakout-privilege-escalation/release\_agent-exploit-relative-paths-to-pids.md)
-{% endcontent-ref %}
+- [release\_agent-exploit-relative-paths-to-pids.md](docker-breakout-privilege-escalation/release\_agent-exploit-relative-paths-to-pids.md)
 
 ```bash
 #!/bin/sh
@@ -332,9 +324,7 @@ The abuse of these files may allow that:
 
 However, you can find **other sensitive files** to check for in this page:
 
-{% content-ref url="docker-breakout-privilege-escalation/sensitive-mounts.md" %}
-[sensitive-mounts.md](docker-breakout-privilege-escalation/sensitive-mounts.md)
-{% endcontent-ref %}
+- [sensitive-mounts.md](docker-breakout-privilege-escalation/sensitive-mounts.md)
 
 ### Host Networking
 

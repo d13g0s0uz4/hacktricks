@@ -85,9 +85,7 @@ mount  | grep /proc.*tmpfs
 
 Container engines launch the containers with a **limited number of capabilities** to control what goes on inside of the container by default. **Privileged** ones have **all** the **capabilities** accesible. To learn about capabilities read:
 
-{% content-ref url="../linux-capabilities.md" %}
-[linux-capabilities.md](../linux-capabilities.md)
-{% endcontent-ref %}
+- [linux-capabilities.md](../linux-capabilities.md)
 
 {% tabs %}
 {% tab title="Inside default container" %}
@@ -119,9 +117,7 @@ You can manipulate the capabilities available to a container without running in 
 
 **Seccomp** is useful to **limit** the **syscalls** a container can call. A default seccomp profile is enabled by default when running docker containers, but in privileged mode it is disabled. Learn more about Seccomp here:
 
-{% content-ref url="seccomp.md" %}
-[seccomp.md](seccomp.md)
-{% endcontent-ref %}
+- [seccomp.md](seccomp.md)
 
 {% tabs %}
 {% tab title="Inside default container" %}
@@ -152,9 +148,7 @@ Seccomp_filters:	0
 
 **AppArmor** is a kernel enhancement to confine **containers** to a **limited** set of **resources** with **per-program profiles**. When you run with the `--privileged` flag, this protection is disabled.&#x20;
 
-{% content-ref url="apparmor.md" %}
-[apparmor.md](apparmor.md)
-{% endcontent-ref %}
+- [apparmor.md](apparmor.md)
 
 ```bash
 # You can manually disable seccomp in docker with
@@ -165,9 +159,7 @@ Seccomp_filters:	0
 
 When you run with the `--privileged` flag, **SELinux labels are disabled**, and the container runs with the **label that the container engine was executed with**. This label is usually `unconfined` and has **full access to the labels that the container engine does**. In rootless mode, the container runs with `container_runtime_t`. In root mode, it runs with `spc_t`.
 
-{% content-ref url="../selinux.md" %}
-[selinux.md](../selinux.md)
-{% endcontent-ref %}
+- [selinux.md](../selinux.md)
 
 ```bash
 # You can manually disable selinux in docker with

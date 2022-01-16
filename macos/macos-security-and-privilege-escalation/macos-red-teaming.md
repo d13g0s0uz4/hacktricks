@@ -9,31 +9,21 @@ If you manage to **compromise admin credentials** to access the management platf
 
 For red teaming in MacOS environments it's highly recommended to have some understanding of how the MDMs work:
 
-{% content-ref url="macos-mdm/" %}
-[macos-mdm](macos-mdm/)
-{% endcontent-ref %}
+- [macos-mdm](macos-mdm/)
 
 And also about **MacOS** "special" **network** **protocols**:
 
-{% content-ref url="macos-protocols.md" %}
-[macos-protocols.md](macos-protocols.md)
-{% endcontent-ref %}
+- [macos-protocols.md](macos-protocols.md)
 
 ## Active Directory
 
 In some occasions you will find that the **MacOS computer is connected to an AD**. In this scenario you should try to **enumerate** the active directory as you are use to it. Find some **help** in the following pages:
 
-{% content-ref url="../../pentesting/pentesting-ldap.md" %}
-[pentesting-ldap.md](../../pentesting/pentesting-ldap.md)
-{% endcontent-ref %}
+- [pentesting-ldap.md](../../pentesting/pentesting-ldap.md)
 
-{% content-ref url="../../windows/active-directory-methodology/" %}
-[active-directory-methodology](../../windows/active-directory-methodology/)
-{% endcontent-ref %}
+- [active-directory-methodology](../../windows/active-directory-methodology/)
 
-{% content-ref url="../../pentesting/pentesting-kerberos-88/" %}
-[pentesting-kerberos-88](../../pentesting/pentesting-kerberos-88/)
-{% endcontent-ref %}
+- [pentesting-kerberos-88](../../pentesting/pentesting-kerberos-88/)
 
 Some **local MacOS tool** that may also help you is `dscl`:
 

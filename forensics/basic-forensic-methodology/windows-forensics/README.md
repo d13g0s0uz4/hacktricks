@@ -266,9 +266,7 @@ In `SAM\Domains\Account\Users` you can obtain the username, the RID, last logon,
 
 ### Interesting entries in the Windows Registry
 
-{% content-ref url="interesting-windows-registry-keys.md" %}
-[interesting-windows-registry-keys.md](interesting-windows-registry-keys.md)
-{% endcontent-ref %}
+- [interesting-windows-registry-keys.md](interesting-windows-registry-keys.md)
 
 ## Programs Executed
 
@@ -276,9 +274,7 @@ In `SAM\Domains\Account\Users` you can obtain the username, the RID, last logon,
 
 in the following page you can learn about the basic Windows processes to detect suspicious behaviours:
 
-{% content-ref url="windows-processes.md" %}
-[windows-processes.md](windows-processes.md)
-{% endcontent-ref %}
+- [windows-processes.md](windows-processes.md)
 
 ### Windows RecentAPPs
 

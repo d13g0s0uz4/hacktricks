@@ -250,9 +250,7 @@ Set a rDNS (PTR) record that resolves the IP address of the VPS to the domain na
 
 You must **configure a SPF record for the new domain**. If you don't know what is a SPF record read the following page:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+- [Broken link](broken-reference)
 
 You can use [https://www.spfwizard.net/](https://www.spfwizard.net) to generate your SPF policy (use the IP of the VPS machine)
 
@@ -268,9 +266,7 @@ v=spf1 mx a ip4:ip.ip.ip.ip ?all
 
 You must **configure a DMARC record for the new domain**. If you don't know what is a DMARC record read the following page:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+- [Broken link](broken-reference)
 
 You have to create a new DNS TXT record pointing the hostname `_dmarc.<domain>` with the following content:
 
@@ -282,9 +278,7 @@ v=DMARC1; p=none
 
 You must **configure a DKIM for the new domain**. If you don't know what is a DMARC record read the following page:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+- [Broken link](broken-reference)
 
 This tutorial is based on: [https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy)
 
@@ -421,9 +415,7 @@ Once everything is ready, just launch the campaign!
 
 If for any reason you want to clone the website check the following page:
 
-{% content-ref url="clone-a-website.md" %}
-[clone-a-website.md](clone-a-website.md)
-{% endcontent-ref %}
+- [clone-a-website.md](clone-a-website.md)
 
 ## Phishing2.0
 
@@ -443,9 +435,7 @@ One easy way to check if you domain appears in any blacklist is to use [https://
 
 However, there are other ways to know if the victim is **actively looking for suspicions phishing activity in the wild** as explained in:
 
-{% content-ref url="detecting-phising.md" %}
-[detecting-phising.md](detecting-phising.md)
-{% endcontent-ref %}
+- [detecting-phising.md](detecting-phising.md)
 
 You can **buy a domain with a very similar name** to the victims domain **and/or generate a certificate** for a **subdomain** of a domain controlled by you **containing** the **keyword** of the victim's domain. If the **victim** perform any kind of **DNS or HTTP interaction** with them, you will know that **he is actively looking** for suspicious domains and you will need to be very stealth.
 

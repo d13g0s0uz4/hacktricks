@@ -108,6 +108,4 @@ Get objects in graph: [https://github.com/FSecureLABS/awspx](https://github.com/
 
 ## GPC
 
-{% content-ref url="gcp-security/" %}
-[gcp-security](gcp-security/)
-{% endcontent-ref %}
+- [gcp-security](gcp-security/)

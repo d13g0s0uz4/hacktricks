@@ -162,9 +162,7 @@ cat /proc/sys/kernel/randomize_va_space 2>/dev/null
 
 If you are inside a docker container you can try to escape from it:
 
-{% content-ref url="docker-breakout/" %}
-[docker-breakout](docker-breakout/)
-{% endcontent-ref %}
+- [docker-breakout](docker-breakout/)
 
 ## Drives
 
@@ -400,9 +398,7 @@ rsync -a *.sh rsync://host.back/src/rbd #You can create a file called "-e sh mys
 
 Read the following page for more wildcard exploitation tricks:
 
-{% content-ref url="wildcards-spare-tricks.md" %}
-[wildcards-spare-tricks.md](wildcards-spare-tricks.md)
-{% endcontent-ref %}
+- [wildcards-spare-tricks.md](wildcards-spare-tricks.md)
 
 ### Cron script overwriting and symlink
 
@@ -553,9 +549,7 @@ socat - UNIX-CLIENT:/dev/socket #connect to UNIX-domain socket, irrespective of 
 
 **Exploitation example:**
 
-{% content-ref url="socket-command-injection.md" %}
-[socket-command-injection.md](socket-command-injection.md)
-{% endcontent-ref %}
+- [socket-command-injection.md](socket-command-injection.md)
 
 ### HTTP sockets
 
@@ -619,17 +613,13 @@ Note that if you have write permissions over the docker socket because you are *
 
 If you find that you can use the **`ctr`** command read the following page as **you may be able to abuse it to escalate privileges**:
 
-{% content-ref url="containerd-ctr-privilege-escalation.md" %}
-[containerd-ctr-privilege-escalation.md](containerd-ctr-privilege-escalation.md)
-{% endcontent-ref %}
+- [containerd-ctr-privilege-escalation.md](containerd-ctr-privilege-escalation.md)
 
 ### **RunC** privilege escalation
 
 If you find that you can use the **`runc`** command read the following page as **you may be able to abuse it to escalate privileges**:
 
-{% content-ref url="runc-privilege-escalation.md" %}
-[runc-privilege-escalation.md](runc-privilege-escalation.md)
-{% endcontent-ref %}
+- [runc-privilege-escalation.md](runc-privilege-escalation.md)
 
 ## **D-Bus**
 
@@ -657,9 +647,7 @@ Policies to the context "default" affects everyone not affected by other policie
 
 **Learn how to enumerate and exploit a D-Bus communication here:**
 
-{% content-ref url="d-bus-enumeration-and-command-injection-privilege-escalation.md" %}
-[d-bus-enumeration-and-command-injection-privilege-escalation.md](d-bus-enumeration-and-command-injection-privilege-escalation.md)
-{% endcontent-ref %}
+- [d-bus-enumeration-and-command-injection-privilege-escalation.md](d-bus-enumeration-and-command-injection-privilege-escalation.md)
 
 ## **Network**
 
@@ -744,9 +732,7 @@ Some Linux versions were affected by a bug that allow users with **UID > INT\_MA
 
 Check if you are a **member of some group** that could grant you root privileges:
 
-{% content-ref url="interesting-groups-linux-pe/" %}
-[interesting-groups-linux-pe](interesting-groups-linux-pe/)
-{% endcontent-ref %}
+- [interesting-groups-linux-pe](interesting-groups-linux-pe/)
 
 ### Clipboard
 
@@ -1071,9 +1057,7 @@ That means that the configuration files from `/etc/ld.so.conf.d/*.conf` will be 
 If for some reason **a user has write permissions** on any of the paths indicated: `/etc/ld.so.conf`, `/etc/ld.so.conf.d/`, any file inside `/etc/ld.so.conf.d/` or any folder indicated inside any config file inside `/etc/ld.so.conf.d/*.conf` he may be able to escalate privileges.\
 Take a look about **how to exploit this misconfiguration** in the following page:
 
-{% content-ref url="ld.so.conf-example.md" %}
-[ld.so.conf-example.md](ld.so.conf-example.md)
-{% endcontent-ref %}
+- [ld.so.conf-example.md](ld.so.conf-example.md)
 
 ### RPATH
 
@@ -1119,9 +1103,7 @@ int __libc_start_main(int (*main) (int, char **, char **), int argc, char ** ubp
 Linux capabilities provide a **subset of the available root privileges to a process**. This effectively breaks up root **privileges into smaller and distinctive units**. Each of these units can then be independently be granted to processes. This way the full set of privileges is reduced and decreasing the risks of exploitation.\
 Read the following page to **learn more about capabilities and how to abuse them**:
 
-{% content-ref url="linux-capabilities.md" %}
-[linux-capabilities.md](linux-capabilities.md)
-{% endcontent-ref %}
+- [linux-capabilities.md](linux-capabilities.md)
 
 ## Directory permissions
 
@@ -1485,21 +1467,15 @@ Files that ships in packages downloaded from distribution repository go into `/u
 
 ### NFS Privilege escalation
 
-{% content-ref url="nfs-no_root_squash-misconfiguration-pe.md" %}
-[nfs-no\_root\_squash-misconfiguration-pe.md](nfs-no\_root\_squash-misconfiguration-pe.md)
-{% endcontent-ref %}
+- [nfs-no\_root\_squash-misconfiguration-pe.md](nfs-no\_root\_squash-misconfiguration-pe.md)
 
 ### Escaping from restricted Shells
 
-{% content-ref url="escaping-from-limited-bash.md" %}
-[escaping-from-limited-bash.md](escaping-from-limited-bash.md)
-{% endcontent-ref %}
+- [escaping-from-limited-bash.md](escaping-from-limited-bash.md)
 
 ### Cisco - vmanage
 
-{% content-ref url="cisco-vmanage.md" %}
-[cisco-vmanage.md](cisco-vmanage.md)
-{% endcontent-ref %}
+- [cisco-vmanage.md](cisco-vmanage.md)
 
 ### Kernel Security Protections
 

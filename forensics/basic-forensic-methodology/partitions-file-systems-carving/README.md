@@ -168,17 +168,13 @@ When a file is "deleted" using a FAT file system, the directory entry remains al
 
 ### **NTFS**
 
-{% content-ref url="ntfs.md" %}
-[ntfs.md](ntfs.md)
-{% endcontent-ref %}
+- [ntfs.md](ntfs.md)
 
 ### EXT
 
 **Ext2** is the most common file-system for **not journaling** partitions (**partitions that don't change much**) like the boot partition. **Ext3/4** are **journaling** and are used usually for the **rest partitions**.
 
-{% content-ref url="ext.md" %}
-[ext.md](ext.md)
-{% endcontent-ref %}
+- [ext.md](ext.md)
 
 ## **Metadata**
 
@@ -202,9 +198,7 @@ As it was seen before there are several places where the file is still saved aft
 
 Also, the OS usually saves a lot of information about file system changes and backups, so it's possible to try to use them to recover the file or as much information as possible.
 
-{% content-ref url="file-data-carving-recovery-tools.md" %}
-[file-data-carving-recovery-tools.md](file-data-carving-recovery-tools.md)
-{% endcontent-ref %}
+- [file-data-carving-recovery-tools.md](file-data-carving-recovery-tools.md)
 
 ### **File Carving**
 
@@ -214,18 +208,14 @@ Note that this technique **doesn't work to retrieve fragmented files**. If a fil
 
 There are several tools that you can use for file Carving indicating them the file-types you want search for&#x20;
 
-{% content-ref url="file-data-carving-recovery-tools.md" %}
-[file-data-carving-recovery-tools.md](file-data-carving-recovery-tools.md)
-{% endcontent-ref %}
+- [file-data-carving-recovery-tools.md](file-data-carving-recovery-tools.md)
 
 ### Data Stream **C**arving
 
 Data Stream Carving is similar to File Carving but i**nstead of looking for complete files, it looks for interesting fragments** of information.\
 For example, instead of looking for a complete file containing logged URLs, this technique will search for URLs.
 
-{% content-ref url="file-data-carving-recovery-tools.md" %}
-[file-data-carving-recovery-tools.md](file-data-carving-recovery-tools.md)
-{% endcontent-ref %}
+- [file-data-carving-recovery-tools.md](file-data-carving-recovery-tools.md)
 
 ### Secure Deletion
 

@@ -4,9 +4,7 @@
 
 If you **don't know what are Windows Access Tokens** read this page before continuing:
 
-{% content-ref url="access-tokens.md" %}
-[access-tokens.md](access-tokens.md)
-{% endcontent-ref %}
+- [access-tokens.md](access-tokens.md)
 
 **Maybe you could be able to escalate privileges abusing the tokens you already have**
 

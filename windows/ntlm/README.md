@@ -184,9 +184,7 @@ wce.exe -s <username>:<domain>:<hash_lm>:<hash_nt>
 
 **Read more detailed guide on how to perform those attacks here:**
 
-{% content-ref url="../../pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks.md" %}
-[spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks.md](../../pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks.md)
-{% endcontent-ref %}
+- [spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks.md](../../pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks.md)
 
 ## Parse NTLM challenges from a network capture
 

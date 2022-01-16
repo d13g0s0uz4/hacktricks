@@ -44,9 +44,7 @@ capsh --print
 
 In the following page you can **learn more about linux capabilities** and how to abuse them:
 
-{% content-ref url="linux-capabilities.md" %}
-[linux-capabilities.md](linux-capabilities.md)
-{% endcontent-ref %}
+- [linux-capabilities.md](linux-capabilities.md)
 
 ## `--privileged` flag
 
@@ -502,25 +500,19 @@ $ debugfs /dev/sda1
 
 This is not a technique to breakout from a Docker container but a security feature that Docker uses and you should know about as it might prevent you from breaking out from docker:
 
-{% content-ref url="seccomp.md" %}
-[seccomp.md](seccomp.md)
-{% endcontent-ref %}
+- [seccomp.md](seccomp.md)
 
 ### AppArmor in Docker
 
 This is not a technique to breakout from a Docker container but a security feature that Docker uses and you should know about as it might prevent you from breaking out from docker:
 
-{% content-ref url="apparmor.md" %}
-[apparmor.md](apparmor.md)
-{% endcontent-ref %}
+- [apparmor.md](apparmor.md)
 
 ### AuthZ & AuthN
 
 An authorization plugin **approves** or **denies** **requests** to the Docker **daemon** based on both the current **authentication** context and the **command** **context**. The **authentication** **context** contains all **user details** and the **authentication** **method**. The **command context** contains all the **relevant** **request** data.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+- [Broken link](broken-reference)
 
 ### gVisor
 

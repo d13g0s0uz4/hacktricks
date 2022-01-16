@@ -323,9 +323,7 @@ Then, it's time for the real Bug Bounty hunt! In this methodology I'm **not goin
 
 ## Github leaked secrets
 
-{% content-ref url="github-leaked-secrets.md" %}
-[github-leaked-secrets.md](github-leaked-secrets.md)
-{% endcontent-ref %}
+- [github-leaked-secrets.md](github-leaked-secrets.md)
 
 You can also search for leaked secrets in all open repository platforms using: [https://searchcode.com/?q=auth_key](https://searchcode.com/?q=auth_key)
 

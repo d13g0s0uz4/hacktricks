@@ -2,9 +2,7 @@
 
 First of all, please note that **most of the tricks about privilege escalation affecting Linux/Unix will affect also MacOS** machines. So see:
 
-{% content-ref url="../../linux-unix/privilege-escalation/" %}
-[privilege-escalation](../../linux-unix/privilege-escalation/)
-{% endcontent-ref %}
+- [privilege-escalation](../../linux-unix/privilege-escalation/)
 
 ## Basic MacOS
 
@@ -152,33 +150,23 @@ printf "\nThe following services are OFF if '0', or ON otherwise:\nScreen Sharin
 
 ### MacOS Architecture
 
-{% content-ref url="mac-os-architecture.md" %}
-[mac-os-architecture.md](mac-os-architecture.md)
-{% endcontent-ref %}
+- [mac-os-architecture.md](mac-os-architecture.md)
 
 ### MacOS Serial Number
 
-{% content-ref url="macos-serial-number.md" %}
-[macos-serial-number.md](macos-serial-number.md)
-{% endcontent-ref %}
+- [macos-serial-number.md](macos-serial-number.md)
 
 ### MacOS MDM
 
-{% content-ref url="macos-mdm/" %}
-[macos-mdm](macos-mdm/)
-{% endcontent-ref %}
+- [macos-mdm](macos-mdm/)
 
 ### MacOS Protocols
 
-{% content-ref url="macos-protocols.md" %}
-[macos-protocols.md](macos-protocols.md)
-{% endcontent-ref %}
+- [macos-protocols.md](macos-protocols.md)
 
 ### MacOS - Inspecting, Debugging and Fuzzing
 
-{% content-ref url="macos-apps-inspecting-debugging-and-fuzzing.md" %}
-[macos-apps-inspecting-debugging-and-fuzzing.md](macos-apps-inspecting-debugging-and-fuzzing.md)
-{% endcontent-ref %}
+- [macos-apps-inspecting-debugging-and-fuzzing.md](macos-apps-inspecting-debugging-and-fuzzing.md)
 
 ## MacOS Security Mechanisms
 
@@ -1072,9 +1060,7 @@ However, there are still some tools that can be used to understand this kind of 
 
 Red Teaming in **environments where MacOS** is used instead of Windows can be very **different**. In this guide you will find some interesting tricks for this kind of assessments:
 
-{% content-ref url="macos-red-teaming.md" %}
-[macos-red-teaming.md](macos-red-teaming.md)
-{% endcontent-ref %}
+- [macos-red-teaming.md](macos-red-teaming.md)
 
 ## MacOS Automatic Enumeration Tools
 

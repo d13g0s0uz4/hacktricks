@@ -157,9 +157,7 @@ debsums | grep -v "OK$" #apt-get install debsums
 
 Read the following page to learn about tools that can be useful to find malware:
 
-{% content-ref url="malware-analysis.md" %}
-[malware-analysis.md](malware-analysis.md)
-{% endcontent-ref %}
+- [malware-analysis.md](malware-analysis.md)
 
 ## Search installed programs
 

@@ -8,9 +8,7 @@ A linux machine in an AD might be **storing different CCACHE tickets inside file
 
 In this page you are going to find different places were you could **find kerberos tickets inside a linux host**, in the following page you can learn how to transform this CCache tickets formats to Kirbi (the format you need to use in Windows) and also how to perform a PTT attack:
 
-{% content-ref url="../../windows/active-directory-methodology/pass-the-ticket.md" %}
-[pass-the-ticket.md](../../windows/active-directory-methodology/pass-the-ticket.md)
-{% endcontent-ref %}
+- [pass-the-ticket.md](../../windows/active-directory-methodology/pass-the-ticket.md)
 
 ### CCACHE ticket reuse from /tmp
 

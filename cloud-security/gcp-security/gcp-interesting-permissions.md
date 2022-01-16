@@ -285,6 +285,4 @@ There are tens of resources types with this kind of permission, you can find all
 
 An **example** of privilege escalation abusing .setIamPolicy (in this case in a bucket) can be found here:
 
-{% content-ref url="gcp-buckets-brute-force-and-privilege-escalation.md" %}
-[gcp-buckets-brute-force-and-privilege-escalation.md](gcp-buckets-brute-force-and-privilege-escalation.md)
-{% endcontent-ref %}
+- [gcp-buckets-brute-force-and-privilege-escalation.md](gcp-buckets-brute-force-and-privilege-escalation.md)

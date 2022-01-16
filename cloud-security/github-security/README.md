@@ -6,9 +6,7 @@
 
 ### Basic Information
 
-{% content-ref url="basic-github-information.md" %}
-[basic-github-information.md](basic-github-information.md)
-{% endcontent-ref %}
+- [basic-github-information.md](basic-github-information.md)
 
 ## External Recon
 

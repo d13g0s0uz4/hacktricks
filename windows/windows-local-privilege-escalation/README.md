@@ -14,25 +14,19 @@ If you want to **share some tricks with the community** you can also submit **pu
 
 **If you don't know what are Windows Access Tokens, read the following page before continuing:**
 
-{% content-ref url="access-tokens.md" %}
-[access-tokens.md](access-tokens.md)
-{% endcontent-ref %}
+- [access-tokens.md](access-tokens.md)
 
 ### ACLs - DACLs/SACLs/ACEs
 
 **If you don't know what is any of the acronyms used in the heading of this section, read the following page before continuing**:
 
-{% content-ref url="acls-dacls-sacls-aces.md" %}
-[acls-dacls-sacls-aces.md](acls-dacls-sacls-aces.md)
-{% endcontent-ref %}
+- [acls-dacls-sacls-aces.md](acls-dacls-sacls-aces.md)
 
 ### Integrity Levels
 
 **If you don't know what are integrity levels in Windows you should read the following page before continuing:**
 
-{% content-ref url="integrity-levels.md" %}
-[integrity-levels.md](integrity-levels.md)
-{% endcontent-ref %}
+- [integrity-levels.md](integrity-levels.md)
 
 ## System Info
 
@@ -233,15 +227,11 @@ Just execute the created binary to escalate privileges.
 
 Read this tutorial to learn how to create a MSI wrapper using this tools. Note that you can wrap a "**.bat**" file if you **just** want to **execute** **command lines**
 
-{% content-ref url="msi-wrapper.md" %}
-[msi-wrapper.md](msi-wrapper.md)
-{% endcontent-ref %}
+- [msi-wrapper.md](msi-wrapper.md)
 
 ### Create MSI with WIX
 
-{% content-ref url="create-msi-with-wix.md" %}
-[create-msi-with-wix.md](create-msi-with-wix.md)
-{% endcontent-ref %}
+- [create-msi-with-wix.md](create-msi-with-wix.md)
 
 ### MSI Installation
 
@@ -380,18 +370,14 @@ Get-LocalGroupMember Administrators | ft Name, PrincipalSource
 
 If you **belongs to some privileged group you may be able to escalate privileges**. Learn about privileged groups and how to abuse them to escalate privileges here:
 
-{% content-ref url="../active-directory-methodology/privileged-accounts-and-token-privileges.md" %}
-[privileged-accounts-and-token-privileges.md](../active-directory-methodology/privileged-accounts-and-token-privileges.md)
-{% endcontent-ref %}
+- [privileged-accounts-and-token-privileges.md](../active-directory-methodology/privileged-accounts-and-token-privileges.md)
 
 ### Token manipulation
 
 **Learn more** about what is a **token** in this page: [**Windows Tokens**](../authentication-credentials-uac-and-efs.md#access-tokens).\
 Check the following page to **learn about interesting tokens** and how to abuse them:
 
-{% content-ref url="privilege-escalation-abusing-tokens.md" %}
-[privilege-escalation-abusing-tokens.md](privilege-escalation-abusing-tokens.md)
-{% endcontent-ref %}
+- [privilege-escalation-abusing-tokens.md](privilege-escalation-abusing-tokens.md)
 
 ### Logged users / Sessions
 
@@ -605,9 +591,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\srevices\<service_name> /v ImagePath /t RE
 
 If you have this permission over a registry this means to **you can create sub registries from this one**. In case of Windows services this is **enough to execute arbitrary code:**
 
-{% content-ref url="appenddata-addsubdirectory-permission-over-service-registry.md" %}
-[appenddata-addsubdirectory-permission-over-service-registry.md](appenddata-addsubdirectory-permission-over-service-registry.md)
-{% endcontent-ref %}
+- [appenddata-addsubdirectory-permission-over-service-registry.md](appenddata-addsubdirectory-permission-over-service-registry.md)
 
 
 
@@ -701,9 +685,7 @@ Get-ChildItem 'C:\Program Files\*','C:\Program Files (x86)\*' | % { try { Get-Ac
 **Check if you can overwrite some registry or binary that is going to be executed by a different user.**\
 **Read** the **following page** to learn more about interesting **autoruns locations to escalate privileges**:
 
-{% content-ref url="privilege-escalation-with-autorun-binaries.md" %}
-[privilege-escalation-with-autorun-binaries.md](privilege-escalation-with-autorun-binaries.md)
-{% endcontent-ref %}
+- [privilege-escalation-with-autorun-binaries.md](privilege-escalation-with-autorun-binaries.md)
 
 ### Drivers
 

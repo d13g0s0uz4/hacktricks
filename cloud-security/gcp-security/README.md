@@ -255,9 +255,7 @@ We've automated this completely using [this python script](https://gitlab.com/gi
 
 ## Unauthenticated Attacks
 
-{% content-ref url="gcp-buckets-brute-force-and-privilege-escalation.md" %}
-[gcp-buckets-brute-force-and-privilege-escalation.md](gcp-buckets-brute-force-and-privilege-escalation.md)
-{% endcontent-ref %}
+- [gcp-buckets-brute-force-and-privilege-escalation.md](gcp-buckets-brute-force-and-privilege-escalation.md)
 
 ## Generic GCP Security Checklists
 
@@ -268,9 +266,7 @@ We've automated this completely using [this python script](https://gitlab.com/gi
 
 Supposing that you have compromised a VM in GCP, there are some **GCP privileges** that can allow you to **escalate privileges locally, into other machines and also pivot to other VMs**:
 
-{% content-ref url="gcp-local-privilege-escalation-ssh-pivoting.md" %}
-[gcp-local-privilege-escalation-ssh-pivoting.md](gcp-local-privilege-escalation-ssh-pivoting.md)
-{% endcontent-ref %}
+- [gcp-local-privilege-escalation-ssh-pivoting.md](gcp-local-privilege-escalation-ssh-pivoting.md)
 
 If you have found some [**SSRF vulnerability in a GCP environment check this page**](../../pentesting-web/ssrf-server-side-request-forgery.md#6440).
 
@@ -282,9 +278,7 @@ The most common way once you have obtained some cloud credentials of has comprom
 
 Moreover, during this enumeration, remember that **permissions can be set at the highest level of "Organization"** as well.
 
-{% content-ref url="gcp-interesting-permissions.md" %}
-[gcp-interesting-permissions.md](gcp-interesting-permissions.md)
-{% endcontent-ref %}
+- [gcp-interesting-permissions.md](gcp-interesting-permissions.md)
 
 ### Bypassing access scopes <a href="#bypassing-access-scopes" id="bypassing-access-scopes"></a>
 
@@ -441,33 +435,19 @@ Another promising way to **escalate privileges inside the cloud is to enumerate 
 
 There is a gcloud API endpoint that aims to **list all the resources the accessible from the used user accoun**t, it's in alpha bet and only supports a couple of resources, but maybe in the future you can list all you have access to with it: [https://helpmanual.io/man1/gcloud\_alpha\_resources\_list/](https://helpmanual.io/man1/gcloud\_alpha\_resources\_list/)&#x20;
 
-{% content-ref url="gcp-buckets-enumeration.md" %}
-[gcp-buckets-enumeration.md](gcp-buckets-enumeration.md)
-{% endcontent-ref %}
+- [gcp-buckets-enumeration.md](gcp-buckets-enumeration.md)
 
-{% content-ref url="gcp-compute-enumeration.md" %}
-[gcp-compute-enumeration.md](gcp-compute-enumeration.md)
-{% endcontent-ref %}
+- [gcp-compute-enumeration.md](gcp-compute-enumeration.md)
 
-{% content-ref url="gcp-network-enumeration.md" %}
-[gcp-network-enumeration.md](gcp-network-enumeration.md)
-{% endcontent-ref %}
+- [gcp-network-enumeration.md](gcp-network-enumeration.md)
 
-{% content-ref url="gcp-kms-and-secrets-management-enumeration.md" %}
-[gcp-kms-and-secrets-management-enumeration.md](gcp-kms-and-secrets-management-enumeration.md)
-{% endcontent-ref %}
+- [gcp-kms-and-secrets-management-enumeration.md](gcp-kms-and-secrets-management-enumeration.md)
 
-{% content-ref url="gcp-databases-enumeration.md" %}
-[gcp-databases-enumeration.md](gcp-databases-enumeration.md)
-{% endcontent-ref %}
+- [gcp-databases-enumeration.md](gcp-databases-enumeration.md)
 
-{% content-ref url="gcp-serverless-code-exec-services-enumeration.md" %}
-[gcp-serverless-code-exec-services-enumeration.md](gcp-serverless-code-exec-services-enumeration.md)
-{% endcontent-ref %}
+- [gcp-serverless-code-exec-services-enumeration.md](gcp-serverless-code-exec-services-enumeration.md)
 
-{% content-ref url="gcp-looting.md" %}
-[gcp-looting.md](gcp-looting.md)
-{% endcontent-ref %}
+- [gcp-looting.md](gcp-looting.md)
 
 ## References
 

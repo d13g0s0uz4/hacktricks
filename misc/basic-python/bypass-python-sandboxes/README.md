@@ -484,9 +484,7 @@ if __name__ == "__main__":
 
 You can check the output of this script in this page:
 
-{% content-ref url="output-searching-python-internals.md" %}
-[output-searching-python-internals.md](output-searching-python-internals.md)
-{% endcontent-ref %}
+- [output-searching-python-internals.md](output-searching-python-internals.md)
 
 ## Python Format String
 
@@ -822,9 +820,7 @@ Using tools like [**https://www.decompiler.com/**](https://www.decompiler.com) *
 
 **Check out this tutorial**:
 
-{% content-ref url="../../../forensics/basic-forensic-methodology/specific-software-file-type-tricks/.pyc.md" %}
-[.pyc.md](../../../forensics/basic-forensic-methodology/specific-software-file-type-tricks/.pyc.md)
-{% endcontent-ref %}
+- [.pyc.md](../../../forensics/basic-forensic-methodology/specific-software-file-type-tricks/.pyc.md)
 
 ## Misc Python
 

@@ -18,9 +18,7 @@ The following tools are useful to extract statistic, files...
 
 You can find some Wireshark trick in:
 
-{% content-ref url="wireshark-tricks.md" %}
-[wireshark-tricks.md](wireshark-tricks.md)
-{% endcontent-ref %}
+- [wireshark-tricks.md](wireshark-tricks.md)
 
 ### Xplico Framework
 
@@ -85,9 +83,7 @@ ngrep -I packets.pcap "^GET" "port 80 and tcp and host 192.168 and dst host 192.
 
 Using common carving techniques can be useful to extract files and information from the pcap:
 
-{% content-ref url="../partitions-file-systems-carving/file-data-carving-recovery-tools.md" %}
-[file-data-carving-recovery-tools.md](../partitions-file-systems-carving/file-data-carving-recovery-tools.md)
-{% endcontent-ref %}
+- [file-data-carving-recovery-tools.md](../partitions-file-systems-carving/file-data-carving-recovery-tools.md)
 
 ### Capturing credentials
 
@@ -126,9 +122,7 @@ suricata -r packets.pcap -c /etc/suricata/suricata.yaml -k none -v -l log
 
 Check if you can find any fingerprint of a known malware:
 
-{% content-ref url="../malware-analysis.md" %}
-[malware-analysis.md](../malware-analysis.md)
-{% endcontent-ref %}
+- [malware-analysis.md](../malware-analysis.md)
 
 ## Zeek
 
@@ -212,15 +206,9 @@ rita show-exploded-dns -H --limit 10 zeek_logs
 
 ## Other pcap analysis tricks
 
-{% content-ref url="dnscat-exfiltration.md" %}
-[dnscat-exfiltration.md](dnscat-exfiltration.md)
-{% endcontent-ref %}
+- [dnscat-exfiltration.md](dnscat-exfiltration.md)
 
-{% content-ref url="wifi-pcap-analysis.md" %}
-[wifi-pcap-analysis.md](wifi-pcap-analysis.md)
-{% endcontent-ref %}
+- [wifi-pcap-analysis.md](wifi-pcap-analysis.md)
 
-{% content-ref url="usb-keystrokes.md" %}
-[usb-keystrokes.md](usb-keystrokes.md)
-{% endcontent-ref %}
+- [usb-keystrokes.md](usb-keystrokes.md)
 

@@ -4,9 +4,7 @@
 
 If you want to learn more about **runc** check the following page:
 
-{% content-ref url="../../pentesting/2375-pentesting-docker.md" %}
-[2375-pentesting-docker.md](../../pentesting/2375-pentesting-docker.md)
-{% endcontent-ref %}
+- [2375-pentesting-docker.md](../../pentesting/2375-pentesting-docker.md)
 
 ## PE
 

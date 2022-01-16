@@ -37,6 +37,4 @@ Note also that if you can **mount `/etc`** or any other folder **containing conf
 
 In this page we have discussed ways to escalate privileges using docker flags, you can find **ways to abuse these methods using curl** command in the page:
 
-{% content-ref url="authz-and-authn-docker-access-authorization-plugin.md" %}
-[authz-and-authn-docker-access-authorization-plugin.md](authz-and-authn-docker-access-authorization-plugin.md)
-{% endcontent-ref %}
+- [authz-and-authn-docker-access-authorization-plugin.md](authz-and-authn-docker-access-authorization-plugin.md)
